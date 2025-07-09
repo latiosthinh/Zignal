@@ -2,6 +2,10 @@
   "name": "@zignal/core",
   "version": "0.0.3",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/latiosthinh/Zignal.git"
+  },
   "types": "dist/index.d.ts",
   "files": [
     "dist"
