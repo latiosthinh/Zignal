@@ -1,0 +1,33 @@
+{
+  "name": "@zignal/core",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "description": "Simple, persistent, and reactive global store for React using @preact/signals-react",
+  "keywords": ["react", "signals", "store", "state", "preact", "zignal"],
+  "author": "Thinh.Nguyen",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --declaration --outDir dist",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@preact/signals-react": "^3.2.1"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/ui": "^1.0.0",
+    "jsdom": "^22.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
