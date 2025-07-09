@@ -30,7 +30,7 @@ export interface SignalStoreConfig<T> {
 	storage?: Storage | "localStorage" | "sessionStorage";
 }
 
-function resolveStorage(storage?: SignalStoreConfig<any>["storage"]): Storage | undefined {
+function resolveStorage(storage?: SignalStoreConfig<unknown>["storage"]): Storage | undefined {
 	if (typeof window === "undefined") return undefined;
 	if (storage === "localStorage") return window.localStorage;
 	if (storage === "sessionStorage") return window.sessionStorage;
@@ -38,7 +38,7 @@ function resolveStorage(storage?: SignalStoreConfig<any>["storage"]): Storage | 
 }
 
 let storeId = 0;
-const globalStores = new Map<string, Signal<any>>();
+const globalStores = new Map<string, Signal<unknown>>();
 
 /**
  * Reactively subscribe to a signal and trigger re-render on change.
