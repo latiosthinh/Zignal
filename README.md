@@ -27,7 +27,7 @@ const [counter, setCounter] = useCounter();
 ### createSignalStore(config)
 - `key` (optional): Unique string for global/persistent store
 - `value`: Initial value
-- `storage` (optional): 'localStorage', 'sessionStorage', or custom Storage
+- `storage` (optional): `localStorage`, `sessionStorage` (currently support only `localStorage` and `sessionStorage`)
 
 Returns a React hook: `() => [value, setValue]`
 
